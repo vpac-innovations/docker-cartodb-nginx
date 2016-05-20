@@ -3,17 +3,13 @@ nginx container configured with [cartodb.nginx.proxy.conf](https://github.com/sp
 
 Note: You have to link your cartodb container as cartodb.localhost
 
-# Example
-## Using docker client
-```console
-docker run --link cartodb1:cartodb.localhost -d spawnthink/cartodb-nginx
-```
-
-or 
-## Using docker-compose
+## build 
+docker-compose build
 
 ```console
-git clone https://github.com/spawnthink/docker-cartodb-nginx.git
+git clone https://github.com/vpac-innovations/docker-cartodb-nginx.git
 cd docker-cartodb-nginx
-docker-compose up
+git clone https://github.com/vpac-innovations/docker-cartodb.git
+git clone https://github.com/vpac-innovations/docker-mapproxy.git
+git clone https://github.com/vpac-innovations/docker-postgis.git
 ```
