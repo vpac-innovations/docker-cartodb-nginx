@@ -3,13 +3,25 @@ nginx container configured with [cartodb.nginx.proxy.conf](https://github.com/sp
 
 Note: You have to link your cartodb container as cartodb.localhost
 
-## build 
-docker-compose build
-
 ```console
 git clone https://github.com/vpac-innovations/docker-cartodb-nginx.git
 cd docker-cartodb-nginx
 git clone https://github.com/vpac-innovations/docker-cartodb.git
 git clone https://github.com/vpac-innovations/docker-mapproxy.git
 git clone https://github.com/vpac-innovations/docker-postgis.git
+```
+
+### cartodb source code is need to change fixit 
+```bash
+cd docker-cartodb
+git clone https://github.com/CartoDB/cartodb.git
+cd ..
+cd docker-postgis
+git clone https://github.com/CartoDB/cartodb.git
+```
+
+### execute docker compose
+```
+docker-compose build
+docker-compose up -d
 ```
