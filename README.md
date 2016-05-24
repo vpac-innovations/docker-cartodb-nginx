@@ -14,10 +14,10 @@ git clone https://github.com/vpac-innovations/docker-postgis.git
 ### cartodb source code is need to change fixit 
 ```bash
 cd docker-cartodb
-git clone https://github.com/CartoDB/cartodb.git
+git clone git@github.com:vpac-innovations/cartodb.git
 cd ..
 cd docker-postgis
-git clone https://github.com/CartoDB/cartodb.git
+git clone git@github.com:vpac-innovations/cartodb.git
 ```
 
 ### execute docker compose
