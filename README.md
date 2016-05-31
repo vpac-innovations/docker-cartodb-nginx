@@ -14,11 +14,21 @@ git clone https://github.com/vpac-innovations/docker-postgis.git
 ### cartodb source code is need to change fixit 
 ```bash
 cd docker-cartodb
-git clone git@github.com:vpac-innovations/cartodb.git
+git clone https://github.com/vpac-innovations/cartodb.git
 cd ..
 cd docker-postgis
-git clone git@github.com:vpac-innovations/cartodb.git
+git clone https://github.com/vpac-innovations/cartodb.git
 ```
+
+## change config files on ~/docker-cartodb-nginx/docker-cartodb/config/
+### app_config.yml
+ - setting mapproxy service
+ - database settings
+ - cartodb SQL api service settings
+
+## database.yml
+ - config database location
+
 
 ### execute docker compose
 ```
