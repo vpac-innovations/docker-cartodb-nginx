@@ -14,7 +14,7 @@ cartodb:
   build: ./docker-cartodb/
   links:
     - postgres:postgres
-#    - redis:redis
+    - mapproxy:mapproxy
   ports:
     - "3000:3000"
     - "8080:8080"

@@ -35,3 +35,14 @@ git clone https://github.com/vpac-innovations/cartodb.git
 docker-compose build
 docker-compose up -d
 ```
+
+
+## import default dataset
+```bash
+docker exec -it dockercartodbnginx_cartodb_1 bash
+```
+### inside of the docker instance
+```bash
+cd cartodb
+./import_default_data.sh
+```
