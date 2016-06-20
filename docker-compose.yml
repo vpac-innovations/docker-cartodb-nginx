@@ -4,6 +4,7 @@ nginx:
     - "80:80"
   links:
     - cartodb:cartodb.localhost
+    - mapproxy:mapproxy
 
 mapproxy:
   build: ./docker-mapproxy/
